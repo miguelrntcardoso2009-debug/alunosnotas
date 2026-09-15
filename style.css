@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #eef3f8;
+    color: #263238;
+}
+
+.app {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.login {
+    max-width: 430px;
+    margin: 7vh auto 0;
+}
+
+h1 {
+    color: #1976d2;
+    margin: 0 0 8px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.subtitulo,
+.topo p {
+    color: #6b7280;
+}
+
+label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 9px;
+    font-size: 15px;
+}
+
+input,
+select {
+    border: 1px solid #cbd5e1;
+    background: white;
+}
+
+button {
+    margin-top: 20px;
+    border: 0;
+    background: #1976d2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #125ca6;
+}
+
+.dica {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 9px;
+    background: #eaf4ff;
+    color: #315a7d;
+    font-size: 14px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.botao-sair {
+    width: auto;
+    margin: 0;
+    background: #e53935;
+    padding: 10px 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 20px;
+}
+
+.mensagem {
+    padding: 12px;
+    border-radius: 9px;
+    margin-bottom: 15px;
+}
+
+.sucesso {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.erro {
+    background: #ffebee;
+    color: #b71c1c;
+}
+
+.escondido {
+    display: none !important;
+}
+
+.vazio {
+    color: #777;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    color: #1976d2;
+}
+
+.nota-card {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.nota-card p {
+    color: #6b7280;
+}
+
+.nota {
+    font-size: 76px;
+    font-weight: bold;
+    color: #1976d2;
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topo {
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
